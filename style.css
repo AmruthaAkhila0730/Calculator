@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e9ecef;
+}
+
+.calc-wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.calc-display {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 2em;
+    text-align: right;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}

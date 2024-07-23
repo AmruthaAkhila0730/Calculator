@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Calculator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 col-sm-10 col-12">
+                <div class="card mt-5">
+                    <div class="card-body">
+                        <div class="calc-wrapper">
+                            <div class="calc-display" id="calc-display"></div>
+                            <div class="calc-buttons row">
+                                <button class="btn btn-secondary col-3 mx-auto mt-1" onclick="resetDisplay()">AC</button>
+                                <button class="btn btn-secondary col-3 mx-auto mt-1" onclick="removeLast()">DEL</button>
+                                <button class="btn btn-secondary col-3 mx-auto mt-1" onclick="addOperator('/')">/</button>
+                                <button class="btn btn-secondary col-2 mx-auto mt-1" onclick="addOperator('*')">*</button>
+                            </div>
+                            <div class="calc-buttons row">
+                                <button class="btn btn-light col-3 mx-auto mt-1" onclick="addNumber('7')">7</button>
+                                <button class="btn btn-light col-3 mx-auto mt-1" onclick="addNumber('8')">8</button>
+                                <button class="btn btn-light col-3 mx-auto mt-1" onclick="addNumber('9')">9</button>
+                                <button class="btn btn-secondary col-2 mx-auto mt-1" onclick="addOperator('-')">-</button>
+                            </div>
+                            <div class="calc-buttons row">
+                                <button class="btn btn-light col-3 mx-auto mt-1" onclick="addNumber('4')">4</button>
+                                <button class="btn btn-light col-3 mx-auto mt-1" onclick="addNumber('5')">5</button>
+                                <button class="btn btn-light col-3 mx-auto mt-1" onclick="addNumber('6')">6</button>
+                                <button class="btn btn-secondary col-2 mx-auto mt-1" onclick="addOperator('+')">+</button>
+                            </div>
+                            <div class="calc-buttons row">
+                                <button class="btn btn-light col-3 mx-auto mt-1" onclick="addNumber('1')">1</button>
+                                <button class="btn btn-light col-3 mx-auto mt-1" onclick="addNumber('2')">2</button>
+                                <button class="btn btn-light col-3 mx-auto mt-1" onclick="addNumber('3')">3</button>
+                                <button class="btn btn-primary col-2 mx-auto mt-1" onclick="compute()">=</button>
+                            </div>
+                            <div class="calc-buttons row">
+                                <button class="btn btn-light col-6 mx-auto mt-1" onclick="addNumber('0')">0</button>
+                                <button class="btn btn-light col-5 mx-auto mt-1" onclick="addNumber('.')">.</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
